@@ -1,0 +1,25 @@
+main
+  .block(class="form")
+    form
+      header
+        h2 Create Database
+      section
+        .field
+          label
+            span Name
+            input(
+              name = "name"          
+              type = "text"
+              required = "true"
+            )
+
+          .hint
+            :markdown
+              The name for your database.
+      footer
+        if loading
+          .loading 
+        else 
+          nav
+            a(name="cancel" href="#") Cancel
+            button.highlight Create

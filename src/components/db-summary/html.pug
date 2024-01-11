@@ -1,0 +1,22 @@
+if loading 
+  .block(class="border round" style="min-height: 120px;")
+    .loading 
+else
+  .block(class = "nav border round")
+    nav 
+      header 
+        .block( class = "section")
+            a(href=`/workspaces/${workspace}/db/${db}/overview`)
+              section
+                header
+                  h3= name
+      .nav-items
+        for collection of collections 
+          a(href=`/workspaces/${workspace}/db/${db}/collections/${collection.collection}`)
+            if collection.name 
+              != collection.name
+            else 
+              != collection.collection
+        a(href=`/workspaces/${workspace}/db/${db}/collections/add`) 
+          i(class = "fal fa-plus fa-1x") 
+          | Create A Collection

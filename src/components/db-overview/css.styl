@@ -1,0 +1,30 @@
+main
+  box-sizing border-box
+  display flex
+  flex-wrap wrap
+  justify-content center
+  align-items flex-start
+  align-content flex-start
+  row-gap 4rem
+  column-gap 2rem
+  flex-direction column
+
+.collection
+  --block-child-max-width 992px
+  --collection-main-justify-content flex-start
+
+.collection > section
+  width 992px
+
+@media screen and (max-width: 1056px)
+  .collection 
+    --block-child-flex-direction column
+    --block-child-flex-wrap nowrap
+    --collection-main-flex-direction column
+    --collection-main-flex-wrap nowrap
+    & > section
+      width 533px
+
+@media screen and (max-width: 960px)
+  .collection > section
+    width 320px

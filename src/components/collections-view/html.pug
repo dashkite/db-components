@@ -1,0 +1,35 @@
+main
+  .block(class = "collection vertical")
+    section
+      header 
+        h3 Collections
+        .block(class = "nav highlight")
+          nav
+            a(href=`/workspaces/${workspace}/db/${db}/collections/add`)
+              i(class = "fal fa-plus fa-1x")
+              | Create A Collection
+      .main 
+        if loading 
+          .block(style="align-self: center;")
+            .loading
+        else
+          for collection of collections
+            .block(class="table round")
+              section 
+                header
+                  a(href=`/workspaces/${workspace}/db/${db}/collections/${collection.collection}`) 
+                    h3=collection.collection
+                table
+                  thead 
+                    tr
+                      th Display Name
+                      th # Entries
+                  tbody 
+                    tr 
+                      td 
+                        if collection.name 
+                          p=collection.name
+                        else 
+                          p N/A
+                      td 
+                        p=collection.numKeys

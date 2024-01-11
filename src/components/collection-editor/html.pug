@@ -1,0 +1,33 @@
+main
+  .block(class = "section")
+    section 
+      header
+        h2=`Edit ${collection.collection}`
+        .block(class = "nav highlight")
+          nav 
+            a(href=`/workspaces/${workspace}/db/${db}/collections/${collection.collection}/delete`)
+              | Delete Collection
+  .block(class="form")
+    form
+      section
+        .field
+          label
+            span Display Name
+            input(
+              name = "name"          
+              type = "text"
+              required = "true"
+              value = collection.name
+            )
+
+          .hint
+            :markdown
+              The display name for your collection.
+      footer
+        if loading
+          .loading 
+        else 
+          nav
+            a(name="cancel" href="#") Cancel
+            button.highlight(name="save") Save
+
