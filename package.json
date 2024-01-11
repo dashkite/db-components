@@ -1,0 +1,55 @@
+{
+  "name": "@dashkite/db-components",
+  "version": "0.0.0",
+  "description": "Web Components For DB",
+  "keywords": [],
+  "homepage": "https://github.com/dashkite/db-components#readme",
+  "bugs": {
+    "url": "https://github.com/dashkite/db-components/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashkite/db-components.git"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "author": "Daniel Yoder",
+  "imports": {
+    "#configuration": "./build/browser/src/configuration.js",
+    "#helpers/*": "./build/browser/src/helpers/*.js",
+    "#templates/*": "./build/browser/src/templates/*.js"
+  },
+  "exports": {
+    ".": {
+      "browser": "./build/browser/src/index.js"
+    }
+  },
+  "main": "build/browser/src/index.js",
+  "files": [
+    "build/browser/src"
+  ],
+  "scripts": {
+    "test": "genie test",
+    "build": "genie build"
+  },
+  "devDependencies": {
+    "@dashkite/amen": "^0.2.0",
+    "@dashkite/amen-console": "^0.0.2",
+    "@dashkite/assert": "^0.1.4",
+    "@dashkite/drn-sky": "link:../drn-sky",
+    "@dashkite/genie": "link:../genie",
+    "@dashkite/genie-coffee": "link:../genie-coffee",
+    "@dashkite/genie-modules": "link:../genie-modules",
+    "@dashkite/genie-pug": "link:../genie-pug",
+    "@dashkite/genie-release": "link:../genie-release",
+    "@dashkite/genie-stylus": "link:../genie-stylus",
+    "@dashkite/genie-yaml-drn": "link:../genie-yaml-drn"
+  },
+  "dependencies": {
+    "@dashkite/joy": "^0.3.16",
+    "@dashkite/katana": "^0.4.8",
+    "@dashkite/posh": "link:../posh",
+    "@dashkite/rio": "link:../carbon",
+    "@dashkite/rio-oxygen": "link:../rio-oxygen",
+    "@dashkite/rio-vega": "link:../rio-vega"
+  }
+}

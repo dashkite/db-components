@@ -1,0 +1,30 @@
+main
+  .block(class="form")
+    form
+      header
+        h2 Create Collection
+      section
+        .field
+          label
+            span URL Name
+            input(
+              name = "collection"          
+              type = "text"
+              required = "true"
+              pattern = "[a-z0-9\\-]+"
+            )
+          .hint
+            :markdown
+              A short name that can only include lowercase letters, numbers, and hyphens. Cannot be changed.
+        .field
+          label
+            span Display Name
+            input(
+              name = "name"          
+              type = "text"
+            )
+          .hint
+            :markdown
+              An optional longer name that may include spaces and punctuation. Used for display purposes.
+      footer
+        block actions
