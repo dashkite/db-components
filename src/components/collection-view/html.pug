@@ -1,76 +1,12 @@
 main
-  if status == "ready"
-    .block(class = "collection vertical")
-      section
-        header 
-          if collection.name
-            h2=`${collection.name}`
-          else 
-            h2=`${collection.collection}`
-          .block(class = "nav highlight")
-            nav 
-              a(href=`/workspaces/${workspace}/db/${db}/collections/${collection.collection}/editor`) 
-                | Edit Collection
-        .main 
-          .block(class="table")
-            section 
-              header 
-                h3 Entries 
-              .hint
-                :markdown
-                  This is the stuff in your collection. [Learn more.](https://docs.dashkite.com/db/entries/)
-              table
-                thead 
-                  tr
-                    th # Entries
-                tbody 
-                  tr
-                    td 
-                      p=keys.length
-          .block(class="table")
-            section 
-              header
-                h3 Indices
-                .block(class = "nav highlight")
-                  nav 
-                    a(href=`/workspaces/${workspace}/db/${db}/collections/${collection.collection}/index/add`) 
-                      i(class = "fal fa-plus fa-1x")
-                      | Create An Index
-              .hint 
-                :markdown
-                  An index helps you speed up common queries. [Learn more.](https://docs.dashkite.com/db/indices/)
-              .main
-                if indices.length > 0
-                  table
-                    thead 
-                      tr
-                        th Lookup
-                        th Sort
-                        th Status
-                        th Action
-                    tbody 
-                      for index of indices
-                        tr 
-                          td 
-                            p=index.key
-                          td 
-                            if index.sort
-                              p=index.sort
-                            else 
-                              p N/A
-                          td 
-                            p=index.status
-                          td 
-                            if index.status == "ready"
-                              a(href=`/workspaces/${workspace}/db/${db}/collections/${collection.collection}/index/key/${index.key}/delete?sort=${index.sort}`) Delete
-                            else 
-                              p N/A
-  else 
-     .block(class="section")
-      section 
-        header 
-          if collection.name
-            h2=`${collection.name}`
-          else 
-            h2=`${collection.collection}`
-        .main Your collection is being updated. This may take a couple minutes.
+  section 
+    header 
+      if name
+        h2= name
+      else 
+        h2= collection
+    div
+      dashkite-collection-detail(
+        data-db = db
+        data-collection = collection
+      )

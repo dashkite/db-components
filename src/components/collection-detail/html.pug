@@ -1,0 +1,11 @@
+if status == "ready"
+  main
+    collection-entries(
+      data-db = db
+      data-collection = collection
+    )
+else
+  main
+    p.
+      Your collection is being updated. 
+      This may take a couple minutes.

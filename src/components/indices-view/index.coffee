@@ -1,10 +1,10 @@
+import * as F from "@dashkite/joy/function"
 import * as K from "@dashkite/katana/async"
 import * as Meta from "@dashkite/joy/metaclass"
 
 import * as R from "@dashkite/rio"
 import HTTP from "@dashkite/rio-vega"
 import Router from "@dashkite/rio-oxygen"
-import Subscription from "#helpers/subscription"
 
 import * as Posh from "@dashkite/posh"
 
@@ -17,35 +17,26 @@ import waiting from "#templates/waiting"
 class extends R.Handle
 
   Meta.mixin @, [
-    R.tag "dashkite-db-add"
+
+    R.tag "dashkite-collection-view"
     R.diff
+
     R.initialize [
 
       R.shadow
+      R.sheets [ css, Posh.component ]
 
       R.describe [
-        HTTP.resource ({ workspace }) ->
+        HTTP.resource ({ db, collection }) ->
           origin: origin
-          name: "db create"
+          name: "collection indices"
+          bindings: { db, collection }
       ]
 
       R.activate [
-        R.render html
-        R.focus "input"        
-      ]
-
-      R.click "button", [
-        R.validate
-      ]
-
-      R.valid [
         R.render waiting
-        R.form
-        HTTP.post
-        Subscription.update
-        Router.browse ({ workspace }) ->
-          name: "db"
-          parameters: { workspace }
+        HTTP.get
+        R.render html
       ]
 
     ]

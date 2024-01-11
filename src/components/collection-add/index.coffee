@@ -8,7 +8,7 @@ import Router from "@dashkite/rio-oxygen"
 
 import * as Posh from "@dashkite/posh"
 
-import configurations from "#configuration"
+import { origin } from "#configuration"
 
 import html from "./html"
 import waiting from "./waiting"
@@ -25,7 +25,7 @@ class extends R.Handle
 
       R.describe [
         HTTP.resource ({ db }) ->
-          origin: configuration.origin
+          origin: origin
           name: "account"
           bindings: { db }
       ]

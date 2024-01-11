@@ -1,0 +1,40 @@
+main
+  header
+    h3 Indices
+      nav
+        //- TODO links should be logical
+        a(href=`/workspaces/${workspace}/db/${db}/collections/${collection.collection}/index/add`)
+          | Create An Index
+        p
+          :markdown
+            An index helps you speed up common queries.
+            [Learn more.](https://docs.dashkite.com/db/indices/)
+
+  div
+    if indices.length > 0
+      table
+        thead 
+          tr
+            th Lookup
+            th Sort
+            th Status
+            th Action
+        tbody 
+          for index of indices
+            tr 
+              td 
+                p=index.key
+              td 
+                if index.sort
+                  p=index.sort
+                else 
+                  p N/A
+              td 
+                p=index.status
+              td 
+                if index.status == "ready"
+                  a(href=`/workspaces/${workspace}/db/${db}/collections/${collection.collection}/index/key/${index.key}/delete?sort=${index.sort}`) Delete
+                else 
+                  //- TODO use the equivalent of a disabled button
+                  //- but `a` tags don't have disabled attribute
+                  p None available

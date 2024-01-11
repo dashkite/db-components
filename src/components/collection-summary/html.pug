@@ -1,0 +1,18 @@
+main 
+  header
+    a(href=`/workspaces/${workspace}/db/${db}/collections/${collection.collection}`) 
+      h3=collection.collection
+  table
+    thead 
+      tr
+        th Display Name
+        th # Entries
+    tbody 
+      tr 
+        td 
+          if collection.name 
+            p=collection.name
+          else 
+            p N/A
+        td 
+          p=collection.numKeys
