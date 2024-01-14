@@ -1,5 +1,4 @@
 import * as F from "@dashkite/joy/function"
-import * as K from "@dashkite/katana/async"
 import * as Meta from "@dashkite/joy/metaclass"
 
 import * as R from "@dashkite/rio"
@@ -8,7 +7,8 @@ import Router from "@dashkite/rio-oxygen"
 
 import * as Posh from "@dashkite/posh"
 
-import { origin } from "#configuration"
+import  configuration from "#configuration"
+{ origin } = configuration
 
 import html from "./html"
 import waiting from "./waiting"

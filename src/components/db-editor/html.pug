@@ -1,32 +1,6 @@
-main
-  .block(class = "section")
-    section 
-      header
-        h2 Edit Database
-        .block(class = "nav highlight")
-          nav 
-            a(href=`/workspaces/${workspace}/db/${db.db}/delete`)
-              | Delete Database
-  .block(class="form")
-    form
-      section
-        .field
-          label
-            span Name
-            input(
-              name = "name"          
-              type = "text"
-              required = "true"
-              value = db.name
-            )
-          .hint
-            :markdown
-              The name for your database.
-      footer
-        if loading
-          .loading 
-        else 
-          nav
-            a(name="cancel" href="#") Cancel
-            button.highlight(name="save") Save
+extends main
+block actions
+  nav
+    a(name="cancel" href="#") Cancel
+    button.highlight(name="save") Save
 

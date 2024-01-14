@@ -45,6 +45,7 @@
     "@dashkite/genie-yaml-drn": "link:../genie-yaml-drn"
   },
   "dependencies": {
+    "@dashkite/helium": "^0.4.4",
     "@dashkite/joy": "^0.3.16",
     "@dashkite/katana": "^0.4.8",
     "@dashkite/posh": "link:../posh",

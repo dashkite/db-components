@@ -8,7 +8,8 @@ import Router from "@dashkite/rio-oxygen"
 
 import * as Posh from "@dashkite/posh"
 
-import { origin } from "#configuration"
+import  configuration from "#configuration"
+{ origin } = configuration
 
 import html from "./html"
 import css from "./css"

@@ -1,0 +1,14 @@
+main
+  .block(class = "collection")
+    section
+      header 
+        h2 Databases
+        if subscription
+          if subscription.status == "active" || subscription.status =="trialing"
+            .block(class = "nav highlight")
+              nav
+                a(href=`/workspaces/${workspace}/db/add`)
+                  i(class = "fal fa-plus fa-1x")
+                  | Create A Database
+      .main 
+        block actions

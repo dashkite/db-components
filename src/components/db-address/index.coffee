@@ -1,15 +1,18 @@
-import * as F from "@dashkite/joy/function"
 import * as K from "@dashkite/katana/async"
 import * as Meta from "@dashkite/joy/metaclass"
-import * as R from "@dashkite/rio"
-import * as Posh from "@dashkite/posh"
-import Registry from "@dashkite/helium"
 
-import { Resource, buildCredentials } from "@dashkite/vega-client"
+import * as R from "@dashkite/rio"
+import HTTP from "@dashkite/rio-vega"
+import Router from "@dashkite/rio-oxygen"
+import Message from "#helpers/message"
+
+import * as Posh from "@dashkite/posh"
+
+import  configuration from "#configuration"
+{ origin } = configuration
 
 import html from "./html"
 import css from "./css"
-import waiting from "#templates/waiting"
 
 class extends R.Handle
 
@@ -24,14 +27,9 @@ class extends R.Handle
       ]
       R.click "button", [
         R.description
-        R.call ({ address }) ->
-          try
-            await navigator.clipboard.writeText address
-            queue = await Registry.get "messages"
-            queue.enqueue type: "success", code: "copy-address"
-          catch
-            queue = await Registry.get "messages"
-            queue.enqueue type: "failure"
+        R.get "address"
+        R.copy
+        Message.show type: "success", code: "copy-address"
       ]
     ]
   ]

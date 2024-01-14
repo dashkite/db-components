@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@dashkite/helium':
+    specifier: ^0.4.4
+    version: 0.4.4
   '@dashkite/joy':
     specifier: ^0.3.16
     version: 0.3.16
@@ -76,6 +79,10 @@ packages:
     dependencies:
       '@dashkite/joy': 0.3.16
     dev: true
+
+  /@dashkite/helium@0.4.4:
+    resolution: {integrity: sha512-3e+XLDP87TcUFYVz30wVc4gKYZAcHyZqF32LIGCHi0/z5vnRkMBycMD7DtRTaC8n2guP2S52UsZSfDfvVci5sw==}
+    dev: false
 
   /@dashkite/joy@0.3.16:
     resolution: {integrity: sha512-dsU0us4j1Pb+zceoBvLbnZ2PbmULkJUtM2vtWLxKmoc1DE4w9SVTiPTe6JWvF0A0vk90ldv+Lc9qEA5x3O+DtQ==}
