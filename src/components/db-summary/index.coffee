@@ -2,7 +2,6 @@ import * as Meta from "@dashkite/joy/metaclass"
 
 import * as R from "@dashkite/rio"
 import HTTP from "@dashkite/rio-vega"
-import Router from "@dashkite/rio-oxygen"
 
 import * as Posh from "@dashkite/posh"
 
@@ -10,7 +9,6 @@ import  configuration from "#configuration"
 { origin } = configuration
 
 import html from "./html"
-import waiting from "#templates/waiting"
 import css from "./css"
 
 class extends R.Handle

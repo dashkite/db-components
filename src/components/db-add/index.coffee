@@ -1,12 +1,9 @@
-import * as K from "@dashkite/katana/async"
 import * as Meta from "@dashkite/joy/metaclass"
 
 import * as R from "@dashkite/rio"
 import HTTP from "@dashkite/rio-vega"
 import Router from "@dashkite/rio-oxygen"
 import Subscription from "#helpers/subscription"
-
-import * as Posh from "@dashkite/posh"
 
 import  configuration from "#configuration"
 { origin } = configuration
@@ -24,7 +21,7 @@ class extends R.Handle
       R.shadow
 
       R.describe [
-        HTTP.resource ({ workspace }) ->
+        HTTP.resource
           origin: origin
           name: "db create"
       ]

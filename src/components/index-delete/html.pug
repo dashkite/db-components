@@ -1,0 +1,14 @@
+main
+  .block(class = "section")
+    section 
+      header
+        h2 Delete Index?
+      .main 
+        dashkite-index-summary(data-key = key, data-sort = sort)
+      footer
+        if loading
+          .loading 
+        else 
+          nav 
+            a(name="cancel" href="#") Cancel
+            button.highlight Delete Index

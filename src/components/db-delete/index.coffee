@@ -1,4 +1,3 @@
-import * as K from "@dashkite/katana/async"
 import * as Meta from "@dashkite/joy/metaclass"
 
 import * as R from "@dashkite/rio"

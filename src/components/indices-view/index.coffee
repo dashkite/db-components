@@ -1,10 +1,7 @@
-import * as F from "@dashkite/joy/function"
-import * as K from "@dashkite/katana/async"
 import * as Meta from "@dashkite/joy/metaclass"
 
 import * as R from "@dashkite/rio"
 import HTTP from "@dashkite/rio-vega"
-import Router from "@dashkite/rio-oxygen"
 
 import * as Posh from "@dashkite/posh"
 
@@ -19,7 +16,7 @@ class extends R.Handle
 
   Meta.mixin @, [
 
-    R.tag "dashkite-collection-view"
+    R.tag "dashkite-indices-view"
     R.diff
 
     R.initialize [

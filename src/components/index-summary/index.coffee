@@ -10,13 +10,12 @@ import  configuration from "#configuration"
 
 import html from "./html"
 import css from "./css"
-import waiting from "#templates/waiting"
-
+import waiting from "./waiting"
 
 class extends R.Handle
 
   Meta.mixin @, [
-    R.tag "dashkite-collections-view"
+    R.tag "dashkite-index-summary"
     R.diff
     
     R.initialize [
@@ -25,10 +24,10 @@ class extends R.Handle
       R.sheets [ css, Posh.component ]
       
       R.describe [
-        HTTP.resource ({ db }) ->
+        HTTP.resource ({ db, collection }) ->
           origin: origin
-          name: "collections"
-          bindings: { db }
+          name: "collection indices"
+          bindings: { db, collection }
       ]
 
       R.activate [
@@ -38,3 +37,4 @@ class extends R.Handle
       ]
     ]
   ]
+

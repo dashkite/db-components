@@ -1,5 +1,3 @@
-import * as F from "@dashkite/joy/function"
-import * as K from "@dashkite/katana/async"
 import * as Meta from "@dashkite/joy/metaclass"
 
 import * as R from "@dashkite/rio"
@@ -27,7 +25,7 @@ class extends R.Handle
       R.sheets [ css, Posh.component ]
 
       R.describe [
-        HTTP.resource ({ workspace, db, collection }) ->
+        HTTP.resource ({ db, collection }) ->
           origin: origin
           name: "collection"
           bindings: { db, collection }
