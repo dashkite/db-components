@@ -1,35 +1,5 @@
-main
-  .block(class="form")
-    form
-      header
-        h2 Create Index
-      section
-        .field
-          label
-            span Lookup
-            input(
-              name = "key"          
-              type = "text"
-              required = "true"
-            )
-          .hint
-            :markdown
-              The lookup key for the index.
-        .field
-          label
-            span Sort
-            input(
-              name = "sort"          
-              type = "text"
-              required = "true"
-            )
-          .hint
-            :markdown
-              The property to sort the index by.
-      footer
-        if loading
-          .loading 
-        else 
-          nav
-            a(name="cancel" href="#") Cancel
-            button.highlight Create
+extends main
+block actions
+  nav
+    a(name="cancel" href="#") Cancel
+    button.highlight Create

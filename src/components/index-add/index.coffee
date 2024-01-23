@@ -11,7 +11,7 @@ import  configuration from "#configuration"
 
 import html from "./html"
 import waiting from "./waiting"
-import css from "./css"
+# import css from "./css"
 
 class extends R.Handle
 
@@ -20,7 +20,7 @@ class extends R.Handle
     R.diff
     R.initialize [
       R.shadow
-      R.sheets [ css, Posh.component ]
+      # R.sheets [ css, Posh.component ]
 
       R.describe [
         HTTP.resource ({ db, collection }) ->

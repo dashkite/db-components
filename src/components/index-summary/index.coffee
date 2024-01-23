@@ -10,7 +10,7 @@ import  configuration from "#configuration"
 
 import html from "./html"
 import css from "./css"
-import waiting from "./waiting"
+import waiting from "#templates/waiting"
 
 class extends R.Handle
 

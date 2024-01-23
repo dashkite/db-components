@@ -1,5 +1,5 @@
 build/browser/src/configuration.js: _Dq4FCaX
-build/browser/src/index.js: b1aMH6pN
+build/browser/src/index.js: 7b35aHMg
 build/browser/src/components/collection-add/css.js: 2VyyDQ8T
 build/browser/src/components/collection-add/html.js: 54kRCeti
 build/browser/src/components/collection-add/index.js: PLkSHrsG
@@ -66,11 +66,15 @@ build/browser/src/components/entries-view/index.js: xvgYcPgg
 build/browser/src/components/indices-view/css.js: P7d7jtjE
 build/browser/src/components/indices-view/html.js: GaA5-6JO
 build/browser/src/components/indices-view/index.js: dPtPqkCg
-build/browser/src/components/index-add/html.js: yxApvyae
-build/browser/src/components/index-add/index.js: wm9kZHoa
+build/browser/src/components/index-add/html.js: Ow7Y9oRb
+build/browser/src/components/index-add/index.js: qmIQMzAU
 build/browser/src/components/index-delete/css.js: 5io_phpX
-build/browser/src/components/index-delete/html.js: sN3WESIN
+build/browser/src/components/index-delete/html.js: jHbzIk91
 build/browser/src/components/index-delete/index.js: Zu4Kst8E
 build/browser/src/components/index-summary/css.js: JyMtUfWo
 build/browser/src/components/index-summary/html.js: G6ntGpVG
-build/browser/src/components/index-summary/index.js: 1KXZAlHc
+build/browser/src/components/index-summary/index.js: F0dJZMub
+build/browser/src/components/index-add/main.js: boKwLV2A
+build/browser/src/components/index-add/waiting.js: bDmXe3HW
+build/browser/src/components/index-delete/main.js: sIRvLWOy
+build/browser/src/components/index-delete/waiting.js: 71yGV_xk
