@@ -31,11 +31,7 @@ class extends R.Handle
         R.focus "input"        
       ]
 
-      R.click "button", [
-        R.validate
-      ]
-
-      R.valid [
+      R.submit [
         R.render waiting
         R.form
         HTTP.post

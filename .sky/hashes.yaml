@@ -1,8 +1,8 @@
-build/browser/src/configuration.js: _Dq4FCaX
+build/browser/src/configuration.js: eCS5ZEq_
 build/browser/src/index.js: 7b35aHMg
 build/browser/src/components/collection-add/css.js: 2VyyDQ8T
 build/browser/src/components/collection-add/html.js: 54kRCeti
-build/browser/src/components/collection-add/index.js: PLkSHrsG
+build/browser/src/components/collection-add/index.js: B9ReEPxO
 build/browser/src/components/collection-add/main.js: UmDaDp96
 build/browser/src/components/collection-add/waiting.js: UyN1RiNw
 build/browser/src/helpers/credentials.js: jx35s1Gs
@@ -18,7 +18,7 @@ build/browser/src/components/collection-detail/html.js: FY2lSx6u
 build/browser/src/components/collection-detail/index.js: 5Vc6yi8o
 build/browser/src/components/collection-editor/css.js: KPmLJWFU
 build/browser/src/components/collection-editor/html.js: vFg3FFa3
-build/browser/src/components/collection-editor/index.js: uG-1tbTi
+build/browser/src/components/collection-editor/index.js: ljuftxWg
 build/browser/src/components/collection-summary/css.js: 3NIxD0E7
 build/browser/src/components/collection-summary/html.js: ck-oIGX_
 build/browser/src/components/collection-summary/index.js: Ep8gsAjr
@@ -29,7 +29,7 @@ build/browser/src/components/collections-view/css.js: 3NIxD0E7
 build/browser/src/components/collections-view/html.js: FdMqgXmO
 build/browser/src/components/collections-view/index.js: O0CA6efz
 build/browser/src/components/db-add/html.js: yVWSc3YJ
-build/browser/src/components/db-add/index.js: fWljSuG9
+build/browser/src/components/db-add/index.js: Z4odJxOu
 build/browser/src/components/db-address/css.js: h_uFLd3Q
 build/browser/src/components/db-address/html.js: nOuM8Xb8
 build/browser/src/components/db-address/index.js: daOOiJ5h
@@ -40,7 +40,7 @@ build/browser/src/components/db-delete/main.js: Os7h9JOZ
 build/browser/src/components/db-delete/waiting.js: 2GXe72k_
 build/browser/src/components/db-editor/css.js: KPmLJWFU
 build/browser/src/components/db-editor/html.js: xKRmo3gF
-build/browser/src/components/db-editor/index.js: 7m7572OK
+build/browser/src/components/db-editor/index.js: MNEO4I7h
 build/browser/src/components/db-editor/main.js: 7qB2gFiI
 build/browser/src/components/db-editor/waiting.js: pP4AyD73
 build/browser/src/components/db-home/css.js: S1Car6o4
@@ -67,7 +67,7 @@ build/browser/src/components/indices-view/css.js: P7d7jtjE
 build/browser/src/components/indices-view/html.js: GaA5-6JO
 build/browser/src/components/indices-view/index.js: dPtPqkCg
 build/browser/src/components/index-add/html.js: Ow7Y9oRb
-build/browser/src/components/index-add/index.js: qmIQMzAU
+build/browser/src/components/index-add/index.js: c7RXi3RM
 build/browser/src/components/index-delete/css.js: 5io_phpX
 build/browser/src/components/index-delete/html.js: jHbzIk91
 build/browser/src/components/index-delete/index.js: Zu4Kst8E
