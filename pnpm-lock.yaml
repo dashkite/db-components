@@ -26,6 +26,9 @@ dependencies:
   '@dashkite/rio-vega':
     specifier: link:../rio-vega
     version: link:../rio-vega
+  '@dashkite/sierra':
+    specifier: link:../sierra
+    version: link:../sierra
 
 devDependencies:
   '@dashkite/amen':

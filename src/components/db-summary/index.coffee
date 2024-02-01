@@ -24,16 +24,18 @@ class extends R.Handle
       R.sheets [ css, Posh.component ]
 
       R.describe [
-        HTTP.resource ({ db }) ->
+        HTTP.resource
           origin: origin
           name: "db"
-          bindings: { db }
       ]
 
       R.activate [
-        R.render.waiting
-        HTTP.get
-        R.render html
+        # R.render waiting
+        HTTP.get [
+          HTTP.json [
+            R.render html
+          ]
+        ]
       ]
 
     ]

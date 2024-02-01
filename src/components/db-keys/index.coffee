@@ -4,6 +4,9 @@ import * as R from "@dashkite/rio"
 
 import * as Posh from "@dashkite/posh"
 
+import Credentials from "#helpers/credentials"
+import Message from "#helpers/message"
+
 import html from "./html"
 import css from "./css"
 

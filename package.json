@@ -51,6 +51,7 @@
     "@dashkite/posh": "link:../posh",
     "@dashkite/rio": "link:../carbon",
     "@dashkite/rio-oxygen": "link:../rio-oxygen",
-    "@dashkite/rio-vega": "link:../rio-vega"
+    "@dashkite/rio-vega": "link:../rio-vega",
+    "@dashkite/sierra": "link:../sierra"
   }
 }

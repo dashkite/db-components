@@ -1,3 +1,4 @@
+import * as K from "@dashkite/katana/async"
 import Registry from "@dashkite/helium"
 
 Message =

@@ -25,7 +25,7 @@ class extends R.Handle
       R.shadow
       R.sheets [ css, Posh.component ]
 
-      R.description [
+      R.describe [
         HTTP.resource ({ db }) ->
           origin: origin
           name: "db"

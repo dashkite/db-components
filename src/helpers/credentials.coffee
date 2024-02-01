@@ -1,11 +1,11 @@
+import * as K from "@dashkite/katana/async"
 # TODO where does this belong?
-import { buildCredentials } from "@dashkite/vega-client"
-
+import _Credentials from "@dashkite/sierra"
 
 Credentials = 
 
   build: K.push ->
-    buildCredentials {
+    _Credentials.build {
       domain: configuration.db.domain
       name: "db"
       method: "get"
