@@ -67,3 +67,14 @@ build/browser/src/components/index-add/index.js: 6oLJYX8D
 build/browser/src/components/db-home/html.js: mV5fW_Gm
 build/browser/src/components/index-delete/index.js: a0nYyVv_
 build/browser/src/components/db-summary/index.js: eDnouL8f
+build/browser/src/components/collection-add/css.js: 2VyyDQ8T
+build/browser/src/components/collection-delete/css.js: h_uFLd3Q
+build/browser/src/configuration.js: D3FkR1gD
+build/browser/src/helpers/subscription.js: Q7n6VRpY
+build/browser/src/templates/empty.js: VJBpCftZ
+build/browser/src/components/collections-view/css.js: 3NIxD0E7
+build/browser/src/templates/waiting.js: QJDMwcM7
+build/browser/src/helpers/message.js: 6RaspaMh
+build/browser/src/components/collection-summary/css.js: 3NIxD0E7
+build/browser/src/helpers/credentials.js: feZ9EO48
+build/browser/src/components/collection-detail/css.js: P7d7jtjE
