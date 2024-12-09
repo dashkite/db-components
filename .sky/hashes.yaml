@@ -73,3 +73,8 @@ build/browser/src/components/db-home/html.js: mV5fW_Gm
 build/browser/src/components/db-summary/index.js: KlwnHyDU
 build/browser/src/components/indices-view/html.js: GaA5-6JO
 build/browser/src/components/index-summary/index.js: 9cMzyZkz
+build/browser/src/helpers/message.js: fCd-CDEA
+build/browser/src/templates/waiting.js: QJDMwcM7
+build/browser/src/helpers/subscription.js: oYyJkjyc
+build/browser/src/templates/empty.js: VJBpCftZ
+build/browser/src/configuration.js: D3FkR1gD
